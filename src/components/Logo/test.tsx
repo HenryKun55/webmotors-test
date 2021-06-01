@@ -1,11 +1,11 @@
 import { screen } from '@testing-library/react'
 import { renderWithTheme } from 'utils/tests/helper'
 
-import { {{pascalCase name}} } from '.'
+import { Logo } from '.'
 
-describe('<{{pascalCase name}} />', () => {
+describe('<Logo />', () => {
   it('should render the heading', () => {
-    const { container } = renderWithTheme(<{{pascalCase name}} />)
+    const { container } = renderWithTheme(<Logo />)
 
     expect(container.firstChild).toMatchSnapshot()
   })

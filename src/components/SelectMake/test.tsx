@@ -1,11 +1,11 @@
 import { screen } from '@testing-library/react'
 import { renderWithTheme } from 'utils/tests/helper'
 
-import { {{pascalCase name}} } from '.'
+import { SelectMake } from '.'
 
-describe('<{{pascalCase name}} />', () => {
+describe('<SelectMake />', () => {
   it('should render the heading', () => {
-    const { container } = renderWithTheme(<{{pascalCase name}} />)
+    const { container } = renderWithTheme(<SelectMake />)
 
     expect(container.firstChild).toMatchSnapshot()
   })

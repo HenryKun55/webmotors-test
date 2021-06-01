@@ -8,4 +8,12 @@ module.exports = {
     '@storybook/addon-essentials',
     '@storybook/addon-knobs',
   ],
+  webpackFinal: async (config) => {
+    config.resolve.modules = [
+      ...(config.resolve.modules || []),
+      path.resolve(__dirname, "../src"),
+    ];
+
+    return config;
+  },
 }

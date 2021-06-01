@@ -1,11 +1,11 @@
 import { screen } from '@testing-library/react'
 import { renderWithTheme } from 'utils/tests/helper'
 
-import { {{pascalCase name}} } from '.'
+import { Checkbox } from '.'
 
-describe('<{{pascalCase name}} />', () => {
+describe('<Checkbox />', () => {
   it('should render the heading', () => {
-    const { container } = renderWithTheme(<{{pascalCase name}} />)
+    const { container } = renderWithTheme(<Checkbox name="test" />)
 
     expect(container.firstChild).toMatchSnapshot()
   })
